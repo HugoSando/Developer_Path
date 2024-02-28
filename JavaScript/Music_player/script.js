@@ -5,6 +5,9 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 
+playButton.style.display = 'block';
+pauseButton.style.display = 'none';
+
 const allSongs = [
   {
     id: 0,
@@ -102,13 +105,18 @@ const playSong = (id) => {
   setPlayerDisplay();
   setPlayButtonAccessibleText();
   audio.play();
+  playButton.style.display = 'none';
+  pauseButton.style.display = 'block';
 };
 
 const pauseSong = () => {
   userData.songCurrentTime = audio.currentTime;
   
   playButton.classList.remove("playing");
+
   audio.pause();
+  playButton.style.display = 'block';
+  pauseButton.style.display = 'none';
 };
 
 const playNextSong = () => {
