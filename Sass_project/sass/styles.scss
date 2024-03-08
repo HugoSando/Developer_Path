@@ -1,0 +1,12 @@
+$color1: rgb(28, 46, 73);
+@use 'navbar';
+@use 'reset';
+
+h2 {
+    color: $color1;
+    font-size: 3rem;
+}
+
+p {
+    color: $color1;
+}

@@ -1,0 +1,28 @@
+.nav {
+    background-color: steelblue;
+
+    &__container{
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    &__item{
+        color: #fff;
+        text-decoration: none;
+
+        &--active{
+            text-decoration: underline;
+        }
+    }
+
+    @media (min-width: 764px) {
+        &__container{
+            justify-content: flex-end;
+        }
+    }
+}
