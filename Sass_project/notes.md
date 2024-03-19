@@ -14,6 +14,9 @@ sass
 -npm install sass --save-dev
 -sudo npm install -g sass
 
+Gulp
+npm install gulp-cli -g
+
 crear carpeta de sass y crear style.scss
 -sass --watch sass:css
 
